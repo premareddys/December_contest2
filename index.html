@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+    <main id="main">
+        <header>
+            Multiple Timers App
+        </header>
+
+        <section class="set-timer">
+            <div class="label">Set Time :</div>
+            <div class="input-time">
+                <input type="number" class="hours" placeholder="hh" maxlength="2" min="0" max="23">
+                <span id="separator">:</span> 
+                <input type="number" class="minutes" placeholder="mm" maxlength="2" min="0" max="59">
+                <span id="separator">:</span>
+                <input type="number" class="seconds" placeholder="ss" maxlength="2" min="0" max="59">
+            </div>
+            <button class="set-button" onclick="setTimer()">Set</button>
+        </section>
+
+        <section id="current-timers">
+            Current Timers
+        </section>
+
+        <section id="no-timer-message">
+            You have no timers currently!
+        </section>
+
+    </main>
+
+    <script src="./scprit.js"></script>
+</body>
+</html>

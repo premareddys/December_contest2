@@ -1,0 +1,149 @@
+body{
+    margin: 20px;
+    padding: 20px;
+    background-color: black;
+    font-family: Roboto;
+}
+main{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+header{
+    font-size: 30px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+}
+.set-timer{
+    background: rgba(52, 52, 74, 1);
+    width: 50vw;
+    height: 100px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px 0 30px;
+    margin: 0 auto;
+}
+.label{
+    font-size: 24px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+}
+.set-button{
+    background: rgba(240, 247, 87, 1);
+    width: 80px;
+    height: 40px;
+    border-radius: 26px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.input-time input{
+    border: none;
+    outline: none;
+    font-family: Roboto;
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+    width: 80px;
+    background: rgba(52, 52, 74, 1);
+    border-bottom: 1px solid whitesmoke;
+    color: white;
+}
+.input-time input::placeholder {
+    color: white;
+}
+#separator {
+    font-size: 1.5em;
+    color: white;
+}
+
+#current-timers{
+    background: rgba(57, 57, 62, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 24px;
+    font-weight: 500;
+    width: 300px;
+    height: 55px;
+    border-radius: 25px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#no-timer-message{
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+@media screen and (max-width: 1000px) {
+    .set-timer {
+        width: 80vw;
+        height: auto;
+        padding: 4vw;
+        display:flex;
+        flex-direction: column;
+        gap:8px;
+    
+    }
+
+    .input-time input{
+        width: 50px;
+        font-size: 25px;
+    }
+    .label{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    #separator {
+        font-size: 1em;
+    }
+
+    #current-timers {
+        width: 90vw;
+    }
+}
+@media only screen and (min-width:360px) and (max-width: 440px) {
+    .set-timer {
+        width: 60vw;
+        height: auto;
+        display:flex;
+        flex-direction: column;
+        gap:8px;
+    
+    }
+
+    .input-time input{
+        width: 30px;
+        font-size: 18px;
+    }
+    .label{
+        font-size: 18px;
+        font-weight: 500;
+
+    }
+    #separator {
+        font-size: 0.2em;
+    }
+
+    #current-timers {
+        width: 60vw;
+        font-size: 18px;
+    }
+    #no-timer-message{
+        font-size: 18px;
+    }
+    .set-button{
+        width:60px;
+        height:30px;
+        font-size: 18px;
+    }
+}
